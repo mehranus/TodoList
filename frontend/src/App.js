@@ -48,7 +48,7 @@ function App() {
         <button className='btn-add' onClick={addTask}>Add Task</button>
         <ul>
           {tasks.map(task => (
-            <li key={task._id}>
+            <li key={task._id} className="itemm">
               {task.text}
               <button onClick={() => deleteTask(task._id)}>Delete</button>
             </li>

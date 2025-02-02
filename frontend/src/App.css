@@ -27,9 +27,13 @@
 .input-task{
   background-color: #fdfdfd;
   border: none;
-  padding: 4px 8px ;
+  padding: 8px 12px ;
   border-radius: 4px;
   width: 200px;
+}
+.itemm{
+  background-color: #630552 !important;
+  padding: 8px !important;
 }
 .btn-add{
   margin-top: 10px;
