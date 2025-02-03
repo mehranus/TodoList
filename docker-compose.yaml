@@ -1,5 +1,17 @@
 version: '3.9'
 services:
   mongodb:
+    image: "mongo"
+    volumes:
+      - data-mongo:/data/db
+
+    #env_file:
+     # - ./env/mongo.env
+
+    #environment:
+    #  - USERNAME=root 
+    
+    #networks:
+    #  - app-net  
   backend:
   frontend:
