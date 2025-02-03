@@ -5,13 +5,16 @@ services:
     container_name: mongodb
     volumes:
       - data-mongo:/data/db
-
+      
+    #! set env file
     #env_file:
      # - ./env/mongo.env
 
+    #!set env
     #environment:
     #  - USERNAME=root 
 
+    #!set network
     #networks:
     #  - app-net  
   backend:
@@ -21,6 +24,7 @@ services:
     depends_on:
       - mongodb
     container_name: backend-express  
+   #! you add build by address name file and args 
    # build: 
    #   context: ./backend
    #   dockerfile: dockerfile-dev
@@ -39,3 +43,7 @@ services:
 
 volumes:
   data-mongo:
+
+#! you add network to docker compose
+#networks:
+#  app-net:
