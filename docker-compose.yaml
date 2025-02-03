@@ -10,8 +10,22 @@ services:
 
     #environment:
     #  - USERNAME=root 
-    
+
     #networks:
     #  - app-net  
   backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongodb
+   # build: 
+   #   context: ./backend
+   #   dockerfile: dockerfile-dev
+    #  args:
+    #    - arg1=value1
+     
   frontend:
+
+volumes:
+  data-mongo:
