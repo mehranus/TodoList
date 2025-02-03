@@ -33,7 +33,11 @@
 }
 .itemm{
   background-color: #630552 !important;
-  padding: 8px !important;
+  padding: 12px !important;
+  margin: 20px;
+  width: 100px;
+  border-radius: 6px;
+  display: grid;
 }
 .btn-add{
   margin-top: 10px;
